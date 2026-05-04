@@ -76,7 +76,7 @@
     \tableofcontents}
     \metroset{outer/numbering=counter, outer/progressbar=foot, block=transparent}%
 }
-\newcommand{\myinstlogo}{./corvinus-logos/corvinus_logo.eps}
+\newcommand{\myinstlogo}{./corvinus-logos/corvinus_logo_HUN.eps}
 
 \endinput
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
