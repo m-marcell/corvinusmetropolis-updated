@@ -67,7 +67,6 @@
 \newcommand{\closingframes}[1]{
     \metroset{outer/numbering=none}
     \frame{\thankyoupage{#1}}
-    \frame{}
 }
 \newcommand{\openingframes}[1]{
     \metroset{outer/numbering=none, outer/progressbar=foot}
