@@ -8,24 +8,30 @@
 %\newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{example}[theorem]{Example}
 
+\renewcommand{\myinstlogo}{./corvinus-logos/color_simple_ENG.pdf}
+% \renewcommand{\myinstlogo}{./corvinus-logos/color_simple_HUN.pdf}
+% \renewcommand{\myinstlogo}{./corvinus-logos/black_finance_ENG.pdf}
+% \renewcommand{\myinstlogo}{./corvinus-logos/black_finance_HUN.pdf}
+% \renewcommand{\myinstlogo}{./corvinus-logos/black_simple_ENG.pdf}
+% \renewcommand{\myinstlogo}{./corvinus-logos/black_simple_HUN.pdf}
 
-\title{Quadratic forms}
-\subtitle{The Gauss--Jordan elimination completes the square}
-\author[Magyarkuti]{Gyula~Magyarkuti\,\orcidlink{0000-0003-4444-0481}}%The name only, if the author does not prefer orcidlink.
-\email{magyarkuti@uni-corvinus.hu}
+\title{Corvinus Metropolis Template}
+\subtitle{Examples and usage}
+\author{John Doe}
+\email{john.doe@uni-corvinus.hu}
 
 \institute[Corvinus University]
   {
-  Department of Mathematics\\
+  Example Department\\
   Corvinus University of Budapest\\
   Email: \putemail\\
   Download from:
-  \url{http://web.uni-corvinus.hu/magyarkuti/\jobname .pdf}
+  \url{https://github.com/m-marcell/corvinusmetropolis-updated}
   }
-\date[Week 6. (Fall) Linear Algebra]{\today}
+\date{\today}
 \titlegraphic{\hfill{\includegraphics[width=.2\textwidth]{\myinstlogo}}}
-\subject{Linear Algebra}
-\keywords{Gauss--Jordan elimination, completing the square}
+\subject{Example subject}
+\keywords{keyword1, keyword2}
 
 \newcommand{\lin}{\operatorname{lin}}
 
@@ -33,25 +39,27 @@
 \openingframes{Outline}
 \section{Definition of quadratic forms}
 \frame{
-A quadratic form is a special multi-variable function.
-\begin{definition}
-    Let $A\in\mathbb{R}^{n\times n}$ be a symmetric matrix.
-    Assume that $a_{k,j}$ denotes the appropriate element of that matrix.
-    The function $Q:\mathbb{R}^n\to\mathbb{R}$
-    \[
-    Q\left( x_{1},x_2,\cdots,x_n \right)=
-    \sum_{k=1}^n\sum_{j=1}^na_{k,j}x_kx_j
-    \]
-    is called $n$ variables quadratic function.
-\end{definition}
-If $n=1$ then $Q(x_1)=ax_1^2$.\\
-If $n=2$ then
-$$
-Q\left( x_1,x_2 \right)=a_{1,1}x_1^2+a_{1,2}x_1x_2+a_{2,1}x_2x_1+a_{2,2}x_2^2.
-$$
-Compute the case when $n=3$.
+    \frametitle{Definition of quadratic forms}
+    A quadratic form is a special multi-variable function.
+    \begin{definition}
+        Let $A\in\mathbb{R}^{n\times n}$ be a symmetric matrix.
+        Assume that $a_{k,j}$ denotes the appropriate element of that matrix.
+    	The function $Q:\mathbb{R}^n\to\mathbb{R}$
+    	\[
+    	Q\left( x_{1},x_2,\cdots,x_n \right)=
+    	\sum_{k=1}^n\sum_{j=1}^na_{k,j}x_kx_j
+    	\]
+    	is called $n$ variables quadratic function.
+	\end{definition}
+	If $n=1$ then $Q(x_1)=ax_1^2$.\\
+	If $n=2$ then
+	$$
+	Q\left( x_1,x_2 \right)=a_{1,1}x_1^2+a_{1,2}x_1x_2+a_{2,1}x_2x_1+a_{2,2}x_2^2.
+	$$
+	Compute the case when $n=3$.
 }
 \begin{frame}
+    \frametitle{Definition of quadratic forms}
     \begin{theorem}
         If $A\in\mathbb{R}^{n\times n}$ is a symmetric matrix then the quadratic form determined by 
         $A$ is
