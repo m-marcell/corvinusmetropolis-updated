@@ -1,7 +1,9 @@
+> [!NOTE]
+> This is a fork of the original [corvinusmetropolis theme](https://github.com/magyarkuti/corvinusmetropolis) made by professor Magyarkuti Gyula. This repo is mainly for personal use with the university's new design elemnent, but feel free to use it if you would like.
+
 An extension of the **Metropolis** theme for the **beamer** package in **LaTeX**.
 
-## For Overleaf users
-Copy the [template](<https://www.overleaf.com/read/zvyszxmcxrpp#e70d65>) project.
+----
 
 ## Install locally the beamer style corvinusmetropolis 
 

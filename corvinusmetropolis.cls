@@ -61,7 +61,7 @@
 %
 \newcommand{\thankyoupage}[1]{
     \frametitle{#1}
-    \includegraphics[width=.5\textwidth]{corvinus_egyszerusitett_logo_cmyk.eps}
+    \includegraphics[width=.5\textwidth]{./corvinus-logos/corvinus_egyszerusitett_logo_cmyk.pdf}
     \hfill{\putemail}
 }
 \newcommand{\closingframes}[1]{
@@ -76,7 +76,7 @@
     \tableofcontents}
     \metroset{outer/numbering=counter, outer/progressbar=foot, block=transparent}%
 }
-\newcommand{\myinstlogo}{corvinus_Institute_of_Economics_logo_cmyk.eps}
+\newcommand{\myinstlogo}{./corvinus-logos/corvinus_logo.eps}
 
 \endinput
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
