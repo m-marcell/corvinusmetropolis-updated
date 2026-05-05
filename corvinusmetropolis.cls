@@ -49,19 +49,32 @@
         \ClassInfo{corvinusmetropolis}{You need to compile XeLaTeX os LuaLatex to use the Corvinus recommended fonts TT Nooks and Calluna}
     }
 %
-\definecolor{CorvinusGold}{HTML}{855C24}
-\definecolor{CorvinusBlue}{HTML}{1B213E}
-\setbeamercolor{normal text}{fg=CorvinusBlue}
-\setbeamercolor{alerted text}{fg=CorvinusGold, bg=CorvinusBlue}
-\colorlet{VarCorvinusGold}{CorvinusGold}
-\colorlet{VarCorvinusBlue}{CorvinusBlue}
-% These two color variables defined for the user.
+
+% other official color variations:
+% primary: Old original: 1B213E, Light red: FFDEDE, Red: FF4132, Dark red: 410500, Light green: E1FFD9, Green: 0ACD5A, Dark green: 002300
+% secondry: Old original: 855C24, Light purple: E3DEFF, Purple: A07DF5, Dark purple: 2D004B, Light blue: CDF0FF, Blue: 32B4E6, Dark blue: 002332
+
+% original color scheme
+% \definecolor{SecondaryColor}{HTML}{855C24}
+% \definecolor{PrimaryColor}{HTML}{1B213E}
+
+% updated purple color scheme
+% \definecolor{SecondaryColor}{HTML}{32B4E6}
+% \definecolor{PrimaryColor}{HTML}{2D004B}
+
+% red-brown color scheme
+\definecolor{SecondaryColor}{HTML}{FF4132}
+\definecolor{PrimaryColor}{HTML}{410500}
+
+\setbeamercolor{normal text}{fg=PrimaryColor}
+\setbeamercolor{alerted text}{fg=SecondaryColor, bg=PrimaryColor}
 
 \setbeamertemplate{blocks}[rounded]
 %
 \newcommand{\thankyoupage}[1]{
     \frametitle{#1}
-    \includegraphics[width=.5\textwidth]{./corvinus-logos/notext.pdf}
+    \includegraphics[width=.5\textwidth]{./corvinus-logos/color_notext.pdf}
+    % \includegraphics[width=.25\textwidth]{./corvinus-logos/black_notext.pdf}
     \hfill{\putemail}
 }
 \newcommand{\closingframes}[1]{
