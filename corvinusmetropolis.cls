@@ -14,7 +14,13 @@
 \newcommand{\putemail}{\texttt{\href{mailto:\@email}{\@email}}}
 %
 \usetheme[outer/progressbar=foot, titleformat=smallcaps, subsectionpage=progressbar, block=fill]{metropolis}
+\setmainfont[
+  UprightFont = {./fonts/Calluna-Regular.otf},
+  ItalicFont  = {./fonts/Calluna-Italic.otf},
+  BoldFont    = {./fonts/TT-Nooks-Regular.otf}
+]{Main Font}
 \usefonttheme{serif}
+\urlstyle{tt}
 %
 % other official color variations:
 % primary: Old original: 1B213E, Light red: FFDEDE, Red: FF4132, Dark red: 410500, Light green: E1FFD9, Green: 0ACD5A, Dark green: 002300
@@ -62,8 +68,10 @@
 \newcommand{\bibframes}[1]{
     \metroset{outer/numbering=none, outer/progressbar=foot}
     \begin{frame}[allowframebreaks]
+	\urlstyle{same}
     	\frametitle{#1}
     	\printbibliography[heading=none]
+	\urlstyle{tt}
     \end{frame}
 }
 \newcommand{\myinstlogo}{./corvinus-logos/color_simple_HUN.pdf}
