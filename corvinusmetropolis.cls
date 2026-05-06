@@ -47,11 +47,16 @@
     \metroset{outer/numbering=none}
     \frame{\thankyoupage{#1}}
 }
+\newcommand{\simpleopen}{
+    \metroset{outer/numbering=none, outer/progressbar=foot}
+    \frame{\titlepage}
+    \metroset{outer/numbering=counter, outer/progressbar=foot, block=transparent}%
+}
 \newcommand{\openingframes}[1]{
     \metroset{outer/numbering=none, outer/progressbar=foot}
     \frame{\titlepage}
-    % \frame{\frametitle{#1}
-    % \tableofcontents}
+    \frame{\frametitle{#1}
+    \tableofcontents}
     \metroset{outer/numbering=counter, outer/progressbar=foot, block=transparent}%
 }
 \newcommand{\bibframes}[1]{
