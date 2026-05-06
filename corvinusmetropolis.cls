@@ -4,27 +4,15 @@
 \ProcessOptions
 \LoadClass{beamer}
 %
-\RequirePackage{orcidlink}
+\RequirePackage{orcidlink, fontspec}
 \synctex=1
 %
-\ifboolexpr{bool {xetex} or bool {luatex}}{
-    \ClassInfo{corvinusmetropolis}{Use all of beamer options.\MessageBreak
-    LaTeX package corvinusmetropolis is loaded}
-    \RequirePackage{fontspec}%The package fontspec is also loaded by metropolis.sty but I do not need the option no-math.
-    }{
-    \ifpdf 
-        \ClassInfo{corvinusmetropolis}{Wrong tex engine. Usage: lualatex <filename> or xelatex <filename>\MessageBreak
-                     pdflatex also works but does not use Corvinus fonts.}
-    \else
-        \ClassError{corvinusmetropolis}{Wrong tex engine}{Usage: lualatex <filename> or xelatex <filename>\MessageBreak
-                     pdflatex also works but does not use Corvinus fonts.}
-    \fi
-    }
 %
 \newcommand{\@email}{}
 \newcommand{\email}[1]{\renewcommand{\@email}{#1}}
-\newcommand{\putemail}{\url{\@email}}
+\newcommand{\putemail}{\texttt{\href{mailto:\@email}{\@email}}}
 %
+
 \usetheme[outer/progressbar=foot, titleformat=smallcaps, subsectionpage=progressbar, block=fill]{metropolis}
 \ifboolexpr{bool {xetex} or bool {luatex}}%
     {%
@@ -59,12 +47,12 @@
 % \definecolor{PrimaryColor}{HTML}{1B213E}
 
 % updated purple color scheme
-% \definecolor{SecondaryColor}{HTML}{32B4E6}
-% \definecolor{PrimaryColor}{HTML}{2D004B}
+\definecolor{SecondaryColor}{HTML}{FF4132}
+\definecolor{PrimaryColor}{HTML}{2D004B}
 
 % red-brown color scheme
-\definecolor{SecondaryColor}{HTML}{FF4132}
-\definecolor{PrimaryColor}{HTML}{410500}
+% \definecolor{SecondaryColor}{HTML}{FF4132}
+% \definecolor{PrimaryColor}{HTML}{410500}
 
 \setbeamercolor{normal text}{fg=PrimaryColor}
 \setbeamercolor{alerted text}{fg=SecondaryColor, bg=PrimaryColor}
