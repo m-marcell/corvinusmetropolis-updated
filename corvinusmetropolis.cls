@@ -12,13 +12,13 @@
 \newcommand{\@email}{}
 \newcommand{\email}[1]{\renewcommand{\@email}{#1}}
 \newcommand{\putemail}{\texttt{\href{mailto:\@email}{\@email}}}
+\newcommand{\imp}[1]{\alert{\textit{#1}}}
 %
 \usetheme[outer/progressbar=foot, titleformat=smallcaps, subsectionpage=progressbar, block=fill]{metropolis}
-\setmainfont[
-  UprightFont = {./fonts/Calluna-Regular.otf},
-  ItalicFont  = {./fonts/Calluna-Italic.otf},
-  BoldFont    = {./fonts/TT-Nooks-Regular.otf}
-]{Main Font}
+\usefonttheme{professionalfonts}
+%
+\setmainfont[UprightFont = {./fonts/Calluna-Regular.otf}, ItalicFont  = {./fonts/Calluna-Italic.otf}, BoldFont    = {./fonts/TT-Nooks-Regular.otf}]{Main Font}
+%
 \usefonttheme{serif}
 \urlstyle{tt}
 %
@@ -45,8 +45,7 @@
 %
 \newcommand{\thankyoupage}[1]{
     \frametitle{#1}
-    \includegraphics[width=.4\textwidth]{./corvinus-logos/color_notext.pdf}
-    % \includegraphics[width=.25\textwidth]{./corvinus-logos/black_notext.pdf}
+    \includegraphics[width=.4\textwidth]{./corvinus-logos/color_emblem.pdf}
     \hfill{\putemail}
 }
 \newcommand{\closingframes}[1]{
@@ -74,6 +73,6 @@
 	\urlstyle{tt}
     \end{frame}
 }
-\newcommand{\myinstlogo}{./corvinus-logos/color_simple_HUN.pdf}
+\newcommand{\myinstlogo}{./corvinus-logos/color_simple_ENG.pdf}
 
 \endinput
