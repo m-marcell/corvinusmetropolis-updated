@@ -1,0 +1,81 @@
+\documentclass[aspectratio=169,notheorems]{corvinusmetropolis}
+
+%% To use the hungarian language in citations, uncomment the next line
+%% \usepackage[hungarian]{babel}
+
+%% This template uses biblatex (with biber) for refrencences
+%% Uncomment the next line if you want to add your bib-file
+%% \addbibresource{bibliography.bib}
+
+%% This is to stop the count if the overflowing frames
+\setbeamertemplate{frametitle continuation}{}
+
+%% You can select your institues logo with this command
+%% If you preder, you could also upload your own, and point to that file as well
+%% You can change the size in the title creatin section!
+\renewcommand{\myinstlogo}{./corvinus-logos/color_simple_ENG.pdf}
+
+%% Title and subtitle of the presentiation
+%% \title{}
+%% \subtitle{}
+
+%% Author
+%% \author{}
+
+%% You can add multiple authors with a \\ separation, e.g
+%% \author{Author 1 \\ Author 2}
+
+%% Your email address
+%% \email{}
+
+%% Creates the description and titles of the author
+%%\institute[Corvinus University]
+%%  {
+%%  Institute or Department\\
+%%  Title\\
+%%  Email: \putemail\\
+%%  }
+
+%% In case you have multiple authors, you can add multiple emails as well, e.g
+%%\institute[Corvinus University]
+%%  {
+%%  Institute or Department\\
+%%  Title\\
+%%  \email{email.1@example.com}
+%%  Email: \putemail\\
+%%  \email{email.2@example.com}
+%%  Email: \putemail\\
+%%  }
+
+%% Add the current date
+\date{\today}
+
+%% This creates the institute or university logo on the opening frame
+\titlegraphic{\hfill{\includegraphics[width=.2\textwidth]{\myinstlogo}}}
+
+%% You can define keywords and subjects for the metadata of the presentation
+%% \subject{}
+%% \keywords{}
+
+\begin{document}
+
+%% This creates the opening frame and the table of contents as well
+\openingframes{Outline}
+
+%% You could also make only the opening frame, without the table of contents
+%% \simpleopen{}
+
+%%
+%% for the main part of the presention, use the regular expressions associated with beamer
+%%
+
+%% If you used citations in the presentation, you can print the bibliography to the end
+%% \bibframes{References}
+
+%% This creates a closing frame for the presentation with your email address as well
+%% If you defined multiple authors with multiple emails, the last one will be used here
+%% To override this, use \email{} again
+%% \email{}
+\closingframes{Thank you for your attention!}
+
+\end{document}
