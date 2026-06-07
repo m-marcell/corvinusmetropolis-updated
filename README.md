@@ -15,11 +15,11 @@ I am currently working on a bachelor's/master's thesis template as well, feel fr
 ## Usage
 
 You can download the latest `.zip` version from the releases page, or you can clone the whole repo as well.  
-For the main presentation, edit the `template.tex` file. You can find more options inside!
+For the main presentation, edit the `template.tex` file. You can find more options (fonts, color, logos)inside!
 
 ## Compilation
 
-Because of local fonts in teh `.fonts/` folder, you need to compile the document using `xelatex`. If you are using vim to edit your documents with the [VimTeX](https://github.com/lervag/vimtex) plugin, autocompilation will work with `latexmk`.
+Because of local fonts in the `.fonts/` folder, you need to compile the document using `xelatex`. If you are using vim to edit your documents with the [VimTeX](https://github.com/lervag/vimtex) plugin, autocompilation will work with `latexmk`.
 
 ## Features
 

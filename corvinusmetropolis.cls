@@ -4,7 +4,7 @@
 \ProcessOptions
 \LoadClass{beamer}
 %
-\RequirePackage{orcidlink, fontspec}
+\RequirePackage{orcidlink, qrcode, fontspec}
 \RequirePackage[T1]{fontenc}
 \RequirePackage[style=apa, backend=biber]{biblatex}
 \RequirePackage{csquotes}
@@ -20,7 +20,10 @@
 \usetheme[outer/progressbar=foot, titleformat=smallcaps, subsectionpage=progressbar, block=fill]{metropolis}
 \usefonttheme{professionalfonts}
 %
-\setmainfont[UprightFont = {./fonts/Calluna-Regular.otf}, ItalicFont  = {./fonts/Calluna-Italic.otf}, BoldFont    = {./fonts/TT-Nooks-Regular.otf}]{Main Font}
+% Older fonts
+%\setmainfont[UprightFont = {./fonts/Calluna-Regular.otf}, ItalicFont  = {./fonts/Calluna-Italic.otf}, BoldFont = {./fonts/TT-Nooks-Regular.otf}]{Main Font}
+%
+\setmainfont[UprightFont = {./fonts/SourceSans3-Regular.otf}, ItalicFont  = {./fonts/SourceSans3-It.otf}, BoldFont = {./fonts/SourceSerif4Display-Bold.otf}, BoldItalicFont = {./fonts/SourceSans3-BoldIt.otf}]{Main Font}
 %
 \usefonttheme{serif}
 \urlstyle{tt}
@@ -34,27 +37,28 @@
 % \definecolor{PrimaryColor}{HTML}{1B213E}
 
 % updated purple color scheme
-\definecolor{SecondaryColor}{HTML}{FF4132}
-\definecolor{PrimaryColor}{HTML}{2D004B}
+% \definecolor{SecondaryColor}{HTML}{FF4132}
+% \definecolor{PrimaryColor}{HTML}{2D004B}
 
 % red-brown color scheme
-% \definecolor{SecondaryColor}{HTML}{FF4132}
-% \definecolor{PrimaryColor}{HTML}{410500}
+\definecolor{SecondaryColor}{HTML}{FF4132}
+\definecolor{PrimaryColor}{HTML}{410500}
 
 \setbeamercolor{normal text}{fg=PrimaryColor}
 \setbeamercolor{alerted text}{fg=SecondaryColor, bg=PrimaryColor}
 
 \setbeamertemplate{blocks}[rounded]
 %
-\newcommand{\thankyoupage}[1]{
-    \frametitle{#1}
-    \includegraphics[width=.4\textwidth]{./corvinus-logos/color_emblem.pdf}
-    \hfill{\putemail}
-}
+
 \newcommand{\closingframes}[1]{
     \metroset{outer/numbering=none}
-    \frame{\thankyoupage{#1}}
+    \frame{
+        \frametitle{#1}
+        \includegraphics[width=.5\textwidth]{./corvinus-logos/color_emblem.pdf}
+        \hfill \putemail
+    }
 }
+
 \newcommand{\simpleopen}{
     \metroset{outer/numbering=none, outer/progressbar=foot}
     \frame{\titlepage}
