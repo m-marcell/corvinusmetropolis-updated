@@ -9,8 +9,6 @@
 \RequirePackage[style=apa, backend=biber]{biblatex}
 \RequirePackage{csquotes}
 %
-\synctex=1
-%
 %
 \newcommand{\@email}{}
 \newcommand{\email}[1]{\renewcommand{\@email}{#1}}
@@ -54,8 +52,14 @@
     \metroset{outer/numbering=none}
     \frame{
         \frametitle{#1}
-        \includegraphics[width=.5\textwidth]{./corvinus-logos/color_emblem.pdf}
-        \hfill \putemail
+            \begin{center}
+                \begin{minipage}[b]{0.4\textwidth}
+                    \includegraphics[width=.9\textwidth]{./corvinus-logos/color_emblem.pdf}
+                \end{minipage}
+                \begin{minipage}[b]{0.5\textwidth}
+                    \putemail
+                \end{minipage}
+            \end{center}
     }
 }
 

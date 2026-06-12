@@ -14,7 +14,7 @@
 
 \title{Quadratic Forms}
 \subtitle{Example with professor Magyarkuti's quadratic forms lecture}
-\author[Magyarkuti]{Original author: Gyula Magyarkuti\,\orcidlink{0000-0003-4444-0481}}%The name only, if the author does not prefer orcidlink.
+\author[Magyarkuti]{Original author: Gyula Magyarkuti \orcidlink{0000-0003-4444-0481}}%The name only, if the author does not prefer orcidlink.
 \email{magyarkuti@uni-corvinus.hu}
 
 \institute[Corvinus University]
@@ -24,6 +24,7 @@
   Email: \putemail\\
   Original version: 
   \url{https://github.com/magyarkuti/corvinusmetropolis}
+
   }
 \date{Compiled on: \today}
 \titlegraphic{\hfill{\includegraphics[width=.25\textwidth]{\myinstlogo}}}
@@ -33,8 +34,11 @@
 \newcommand{\lin}{\operatorname{lin}}
 
 \begin{document}
+
 \openingframes{Outline}
+
 \section{Definition of quadratic forms}
+
 \frame{
     \frametitle{Definition of quadratic forms}
     A quadratic form is a special multi-variable function.
@@ -53,8 +57,8 @@
 	$$
 	Q\left( x_1,x_2 \right)=a_{1,1}x_1^2+a_{1,2}x_1x_2+a_{2,1}x_2x_1+a_{2,2}x_2^2.
 	$$
-	Compute the case when $n=3$.
 }
+
 \begin{frame}
     \frametitle{Definition of quadratic forms}
     \begin{theorem}
@@ -75,21 +79,24 @@
         the quadratic form determined by $\alpha A$ is the same as the form determined by $A$ multiplied by $\alpha$.
     \end{theorem}
 \end{frame}
+
 \section{Dyadic decomposition}
+
 \subsection{Dyad and completing the square}
+
 \begin{frame}
     The dyad is a special symmetric matrix representing the perfect squares.
     \begin{definition}
         A symmetric matrix $A\in\mathbb{R}^{n\times n}$ is called \alert{\emph{dyad}}, 
         if there exists a vector
         $a\in\mathbb{R}^{n\times 1}$ for which
-%        \metroset{block=fill}
-%        \begin{block}{}
-        \(
+%       \metroset{block=fill}
+%       \begin{block}{}
+        \[
             A=a\cdot a^T
-        \)
-%        \end{block}
-%        \metroset{block=transparent}
+        \]
+%       \end{block}
+%       \metroset{block=transparent}
     \end{definition}
     \begin{theorem}
         A quadratic form is a complete square if and only if it is determined by a dyad.
@@ -105,7 +112,9 @@
         here $Q$ is the quadratic form determined by the dyad $A$.
     \end{theorem}
 \end{frame}
+
 \subsection{High school method for a few variable only}
+
 \begin{frame}
     \frametitle{Decomposition}
     \metroset{block=fill}
@@ -114,15 +123,17 @@
         every quadratic form is a linear combination of complete squares.
     \end{theorem}
     \metroset{block=transparent}
-\begin{example}
-    Completing the square, rewrite the following quadratic forms as a linear combination of perfect squares.\\
-    $Q\left( x_1,x_2 \right)=x_1^2+4x_1x_2-5x_2^2,$\\
-    $Q\left( x_1,x_2 \right)=4x_1^2+6x_1x_2+9x_2^2,$\\
-    $Q\left( x_1,x_2 \right)=5x_1^2-6x_1x_2+x_2^2,$\\
-    $Q\left( x_1,x_2,x_3 \right)=5x_1^2-6x_1x_2+x_1x_3,$\\
-\end{example}
+    \begin{example}
+        Completing the square, rewrite the following quadratic forms as a linear combination of perfect squares.\\
+        $Q\left( x_1,x_2 \right)=x_1^2+4x_1x_2-5x_2^2,$\\
+        $Q\left( x_1,x_2 \right)=4x_1^2+6x_1x_2+9x_2^2,$\\
+        $Q\left( x_1,x_2 \right)=5x_1^2-6x_1x_2+x_2^2,$\\
+        $Q\left( x_1,x_2,x_3 \right)=5x_1^2-6x_1x_2+x_1x_3,$\\
+    \end{example}
 \end{frame}
+
 \subsection{Professional method}
+
 \begin{frame}
     \frametitle{Dyadic decomposition using Gauss--Jordan elimination}
     Every $n$-variable quadratic form can be decreased by a multiply of a dyad such that
@@ -149,6 +160,7 @@
         If $k=1$ we obtain $r_{1,j}=a_{1,j}-a_{1,1}\cdot 1\cdot\frac{a_{1,j}}{a_{1,1}}=0$.
     \end{proof}
 \end{frame}
+
 \begin{frame}
     The $k,j$ term of the matrix of the remainder quadratic form is
     \metroset{block=fill}
@@ -169,7 +181,9 @@
         is the bottom right $n-1\times n-1$ matrix of the transformation table, when $a_{1,1}$ is the pivot term.
     \end{theorem}
 \end{frame}
+
 \section{Problems}
+
 \begin{frame}
     \frametitle{Problems}
     \begin{block}{ Write the following quadratic forms as a linear combination of complete squares.}
@@ -185,7 +199,9 @@
         \end{enumerate}
     \end{block}
 \end{frame}
+
 \section{Definiteness of a quadratic form}
+
 \begin{frame}
     \frametitle{Definiteness}
     Classify a quadratic form with respect to to the range!
@@ -203,7 +219,9 @@
         \end{description}
     \end{definition}
 \end{frame}
+
 \subsection{Summary}
+
 \begin{frame}
     \frametitle{Definiteness after completing the square}
     It is not hard to decide the definiteness of a quadratic form if it is given with its dyad decomposition.
@@ -229,5 +247,7 @@
         \item all pivot terms are negative numbers then $Q$ is \alert{\emph{negative semidefinite}}.
     \end{itemize}
 \end{frame}
+
 \closingframes{Thank you for your attention!}
+
 \end{document}
