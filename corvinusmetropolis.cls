@@ -4,7 +4,7 @@
 \ProcessOptions
 \LoadClass{beamer}
 %
-\RequirePackage{orcidlink, qrcode, fontspec}
+\RequirePackage{orcidlink, qrcode}
 \RequirePackage[T1]{fontenc}
 \RequirePackage[style=apa, backend=biber]{biblatex}
 \RequirePackage{csquotes}
